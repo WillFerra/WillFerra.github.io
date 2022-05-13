@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Il-Ħamrun</title>
+        <link rel="stylesheet" href="CSS.css">
+        <meta name="viewport" content="width=device-width">
+        <style> 
+            h1 {text-align: center;}
+            h1 {font-family: Arial, Helvetica, sans-serif; padding-top: 20px;}
+            h2 {text-align: center;}
+            h2 {font-family: Arial, Helvetica, sans-serif; padding-top: 10px;}
+            p {text-align: justify;}
+            p {font-family: Arial, Helvetica, sans-serif; padding: 20px;} 
+        </style>
+
+        <!-- Adding the icon library -->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+        
+    </head>
+    
+    <body style="background-color: rgb(240, 243, 243)">
+        
+        <!-- Add font awesome icon to buttons  -->         
+        <button onclick="window.location.href='https://goo.gl/maps/x2pCGgioVk3SjSCt6';" class="btn1"><i class="fa fa-compass"></i></button>
+        <button onclick="window.location.href='MaltiPostijietInteress.html';" class="btn2"><i class="fa fa-arrow-left"></i></button>
+    
+        <!-- Adding the Hamrun Local Logo -->
+        <a href="MaltiHome.html"> 
+          <img src="Arma Hamrun.png" alt="Arma" class="logocentre"/> 
+        </a>
+
+        <!-- Adding the header -->
+        <h1>Il-Ħamrun</h1>
+
+        <!-- Adding the sub-header -->
+        <h2>Knisja Parrokkjali Immakulata Kunċizzjoni</h2> 
+
+        <!-- Adding the body -->
+        <p>
+            Il-bidu ta’ din il-knisja jmur lura meta Pawlu Burlo’ mid-dar tiegħu fi Triq Vitale rama kappella żgħira għalih fejn anke, f’Mejju 
+            fl-1920 għamel festa sabiħa. Huwa żejjen id-dar tiegħu u għamel daqsxejn ta’ banda. Maż-żmien kera mezzanin, dar ma’ dar mat-terran 
+            li kellu biex dan sar oratorju fejn rama kappella akbar iddedikata lill-Kuncizzjoni u fil-kmamar l-oħra użahom biex ikun jista’ jgħallem 
+            lit-tfal id-duttrina u jħejjihom għall-precett. Wara l-mewt ta Pawlu Burlo’, kompla x-xogħol tiegħu sacerdot żgħażugħ Dun Edgar Vella, 
+            bniedem ħabrieki u bieżel ħafna. Hekk kif il-poplu f’dawk l-inħawi beda jiżdied u ma baqax kollu għelieqi bħal qabel, dan Dun Edgar ġieh 
+            il-ħsieb li tinbena Knisja. Ma kienitx facli imma mimli kollu ħeġġa, Dun Edgar sab għalqa vicin l-oratorju bl-għajnuna ta’ l-Arcisqof 
+            Gonzi biex iwettaq il-ħolma tiegħu.<!-- Creating the Read More --> <span id="dots">...</span><span id="more"> 
+            
+            <br><br>
+            
+            Il-Pjanta saret mil-Kavalier Guze’ Damato u fit-23 ta’ Marzu,1958, tqiegħdet u tbierket l-ewwel ġebla ta’ din il-Knisja mill-Eċċellenza 
+            Tiegħu Mons. Isqof Emmanuele Galea. L-istil tagħha hu wieħed Ioniku, b’kampnar wieħed, kopla ħelwa, artal wieħed u żewġ sagristiji.
+            Sfortunatament Dun Edgar ma kellux ix-xorti li jara l-knisja lesta minħabba li miet ta’ 43 sena. Ix-xogħol tkompla minn Dun Ġużepp 
+            Mifsud Bonnici li aktar tard sar l-ewwel kappillan tagħha. 
+            
+            <br> <br>
+
+            Nhar il-Ġimgħa, 16 ta’ Awissu,1963, hija ġiet imbierka mill-Isqof Emmanuele Galea u fl-1 ta’ Lulju’1966 ġiet maħtura vici-parrocca 
+            mill-Isqof Gonzi meta l-istess Isqof aktar tard fl-1 ta’ Jannar, 1968, waqqafha f’parrocca. Ħdejn din il-Knisja tal-Kuncizzjoni naraw 
+            Ċentru Parrokkjali li semma “Marija Immakulata” li jintuza għal-lagħqat, librerija, sala tal-palk u sala għall-attivitajiet differenti 
+            oħra. Il-vara titulari ġiet irregalata fl-1985, mill-Arċikonfraternita’ ta’ l-Immakulata Kuncizzjoni tal-Belt Valletta. Din il-vara 
+            nħadmet f’Ruma fuq inizjattiva tal-Kappillan Dun Mattew Agius.
+
+            <br><br>
+            
+            Fit-3 ta’ Jannar,1988, ittellgħat fuq il-frontispizju tal-knisja, statwa kbira tal-Madonna maħduma bil-fibreglass, xogħol l-iskultur 
+            George Atkins. Hija għolja 43 pied u tbierket mil-Kappillan Dun Manwel Agius.</span>
+        </p>
+
+        <!-- Creating the button -->
+        <button style="display:block; margin: 0 auto" onclick="myFunction()" id="myBtn">Aqra aktar</button>
+        <br>
+        <br>
+
+        <!-- Code for button to work -->
+        <script>
+            function myFunction() {
+                var dots = document.getElementById("dots");
+                var moreText = document.getElementById("more");
+                var btnText = document.getElementById("myBtn");
+            
+                if (dots.style.display === "none") {
+                    dots.style.display = "inline";
+                    btnText.innerHTML = "Aqra aktar"; 
+                    moreText.style.display = "none";
+                } 
+                else {
+                    dots.style.display = "none";
+                    btnText.innerHTML = "Aqra anqas"; 
+                    moreText.style.display = "inline";
+                } 
+            }
+        </script>
+
+        <!-- Adding the Carousel with the images -->
+        <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="carousel">
+            <div class="carousel-indicators">
+              <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+              <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
+              <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
+              <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="3" aria-label="Slide 4"></button>
+              <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="4" aria-label="Slide 5"></button>
+              <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="5" aria-label="Slide 6"></button>
+            </div>
+            <div class="carousel-inner">
+              <div class="carousel-item active">
+                <img src="IMG_1764.JPG" class="d-block w-100" alt="Knisja">
+              </div>
+              <div class="carousel-item">
+                <img src="IMG_1769.JPG" class="d-block w-100" alt="Statue outside">
+              </div>
+              <div class="carousel-item">
+                <img src="IMG_1882.JPG" class="d-block w-100" alt="Statue">
+              </div>
+              <div class="carousel-item">
+                <img src="IMG_1886.JPG" class="d-block w-100" alt="Altar">
+              </div>
+              <div class="carousel-item">
+                <img src="IMG_1891.JPG" class="d-block w-100" alt="Mosaic">
+              </div>
+              <div class="carousel-item">
+                <img src="IMG_1899.JPG" class="d-block w-100" alt="Altar">
+              </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
+              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
+              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Next</span>
+            </button>
+          </div>
+        
+        <!-- Adding the Java Script link -->
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+    </body>
+</html>

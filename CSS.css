@@ -1,0 +1,141 @@
+#more {display: none;}
+p.solid {border-style: solid;}
+
+/* Style navigation buttons */
+.btn1 {
+    float: left;
+    background-color: transparent; /* Transperant background */
+    border: none; /* Remove borders */
+    color: black; /* Black text */
+    padding: 12px 16px; /* Some padding */
+    font-size: 30px; /* Set a font size */
+    cursor: pointer; /* Mouse pointer on hover */
+}
+
+.btn2 {
+    float: right;
+    background-color: transparent; /* Transperant background */
+    border: none; /* Remove borders */
+    color: black; /* Black text */
+    padding: 12px 16px; /* Some padding */
+    font-size: 30px; /* Set a font size */
+    cursor: pointer; /* Mouse pointer on hover */
+}
+
+/* Darker background on mouse-over */
+.btn1:hover {
+    color: wheat;
+}
+
+.btn2:hover {
+    color: wheat;
+}
+
+/* main menu item */
+.mainmenuitem{
+    width: 180px !important; 
+    height: auto !important; 
+    opacity: 0.3 !important;
+}
+
+/* Container holding the image and the text */
+.container {
+    position: relative !important;
+    text-align: center !important;
+    background-color: white !important;
+}
+
+/* text on image */
+.imagetext {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+/* Creating the main menu buttons */
+.menubutton{
+    background-color: transparent !important; /* Transparent background */
+    width: 180px !important;
+    height: 180px !important;
+    border: none !important; /* Remove borders */
+    color: black !important; /* White text */
+    padding: 12px 16px !important; /* Some padding */
+    font-size: 30px !important; /* Set a font size */
+    font-family: Arial, Helvetica, sans-serif !important;
+    cursor: pointer !important; /* Mouse pointer on hover */
+}
+
+/* Creating the container for the Help/Settings and secondary menu buttons */
+.btn-group button {
+    width: 380px !important;
+    height: 60px !important;
+    background-color: white !important; /* white background */
+    border: 1px solid black !important; /* black border */
+    color: black !important; /* black text */
+    padding: 10px 24px !important; /* Some padding */
+    cursor: pointer !important; /* Pointer/hand icon */
+}
+
+/* Add a background color on hover */
+.btn-group button:hover {
+    background-color: wheat;
+}
+
+/* Centre aligning the Hamrun Logo */
+.logocentre {
+    width: 70px;
+    height: auto;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 20px;
+  }
+
+/* Making the images responsive */
+.responsive {
+    width: 100%;
+    height: auto;
+}
+
+/* Centre aligning the main menu */
+.tablecentre {
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/* Centre aligning the secondary menus */
+.buttoncentre {
+    display: flex !important;
+    justify-content: center !important;
+    align-items: center !important;
+}
+
+/* Adding a border to the main menu */
+td {
+    border: 1px solid black !important;
+}
+
+/* Increasing the spacing between cells in the main menu */
+table {
+    border-spacing: 15px !important;
+    padding: 0px !important;
+}
+
+/* Adding skyline image to the background */
+body { 
+    background-image: url(Skyline.png);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center bottom; 
+}
+
+/* Creating the boxes for the other info page */
+.containerInfo {
+    width: 350px;
+    position: relative !important;
+    padding-top: 10px;
+    padding-left: 10px;
+    padding-right: 10px;
+    text-align: center !important;
+}

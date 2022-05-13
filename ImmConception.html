@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Il-Hamrun</title>
+        <link rel="stylesheet" href="CSS.css">
+        <meta name="viewport" content="width=device-width">
+        <style> 
+            h1 {text-align: center;}
+            h1 {font-family: Arial, Helvetica, sans-serif; padding-top: 20px;}
+            h2 {text-align: center;}
+            h2 {font-family: Arial, Helvetica, sans-serif; padding-top: 10px;}
+            p {text-align: justify;}
+            p {font-family: Arial, Helvetica, sans-serif; padding: 20px;} 
+        </style>
+
+        <!-- Adding the icon library -->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+        
+    </head>
+    
+    <body style="background-color: rgb(240, 243, 243)">
+        
+        <!-- Add font awesome icon to buttons  -->         
+        <button onclick="window.location.href='https://goo.gl/maps/x2pCGgioVk3SjSCt6';" class="btn1"><i class="fa fa-compass"></i></button>
+        <button onclick="window.location.href='PlacesofInterest.html';" class="btn2"><i class="fa fa-arrow-left"></i></button>
+    
+        <!-- Adding the Hamrun Local Logo -->
+        <a href="index.html"> 
+          <img src="Arma Hamrun.png" alt="Arma" class="logocentre"/> 
+        </a>
+
+        <!-- Adding the header -->
+        <h1>Il-Ħamrun</h1>
+
+        <!-- Adding the sub-header -->
+        <h2>Parish Church of the Immaculate Conception</h2> 
+
+        <!-- Adding the body -->
+        <p>
+            The Parish Church of the Immaculate Conception of Our Lady is a Roman Catholic parish church in Ħamrun, Malta. It was built 
+            between 1958 and 1963 and it took over the role of an oratory dedicated to the Immaculate Conception which had been established 
+            in Ħamrun in 1923. It has been a parish church since 1968.  <!-- Creating the Read More --> <span id="dots">...</span><span id="more"> 
+            
+            <br><br>
+            
+            An oratory dedicated to the Immaculate Conception was established in Ħamrun by Paul Burlo on 15 May 1923. Initially set up within 
+            a private dwelling, its location was moved several times over the next two decades. After Burlo died in 1950, the priest Edgar 
+            Vella took over the oratory and made plans to construct a permanent church. With assistance from Archbishop Mikiel Gonzi and pastor 
+            Matthew Chircop from the St Cajetan parish, Vella acquired a plot of land which formerly contained railway tracks of the Malta 
+            Railway to build the new building.
+            
+            <br> <br>
+            
+            The new church was designed by the architect Ġużè Damato and it was built by the stonemason Geraldu Camilleri. The first stone was 
+            laid down by Bishop Emanuel Galea on 23 March 1958, and by the end of the year the basement was completed and it was being used to 
+            celebrate Mass. The building was almost complete by the time of Vella's death in 1962, but works halted soon afterwards due to a 
+            number of unpaid debts. The priest Joseph Mifsud Bonnici was later appointed to resume construction, and the building's finishing 
+            touches were made with the assistance of local volunteers. The church was inaugurated by Bishop Galea on 14 August 1963.
+            
+            <br> <br>
+            
+            The area in which the church was built had developed rapidly in the years following World War II. The building became a 
+            vice-parish church in 1966, and later a parish church on 1 January 1968. A parish centre and a house for the pastor were built 
+            adjacent to the church in the 1970s, and work on the church's interior was fully completed in the 1980s. It was officially consecrated 
+            by Archbishop Joseph Mercieca on 28 May 1988.</span>
+        </p>
+
+        <!-- Creating the button -->
+        <button style="display:block; margin: 0 auto" onclick="myFunction()" id="myBtn">Read more</button>
+        <br>
+        <br>
+
+        <!-- Code for button to work -->
+        <script>
+            function myFunction() {
+                var dots = document.getElementById("dots");
+                var moreText = document.getElementById("more");
+                var btnText = document.getElementById("myBtn");
+            
+                if (dots.style.display === "none") {
+                    dots.style.display = "inline";
+                    btnText.innerHTML = "Read more"; 
+                    moreText.style.display = "none";
+                } 
+                else {
+                    dots.style.display = "none";
+                    btnText.innerHTML = "Read less"; 
+                    moreText.style.display = "inline";
+                } 
+            }
+        </script>
+
+        <!-- Adding the Carousel with the images -->
+        <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="carousel">
+            <div class="carousel-indicators">
+              <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+              <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
+              <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
+              <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="3" aria-label="Slide 4"></button>
+              <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="4" aria-label="Slide 5"></button>
+              <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="5" aria-label="Slide 6"></button>
+            </div>
+            <div class="carousel-inner">
+              <div class="carousel-item active">
+                <img src="IMG_1764.JPG" class="d-block w-100" alt="Knisja">
+              </div>
+              <div class="carousel-item">
+                <img src="IMG_1769.JPG" class="d-block w-100" alt="Statue outside">
+              </div>
+              <div class="carousel-item">
+                <img src="IMG_1882.JPG" class="d-block w-100" alt="Statue">
+              </div>
+              <div class="carousel-item">
+                <img src="IMG_1886.JPG" class="d-block w-100" alt="Altar">
+              </div>
+              <div class="carousel-item">
+                <img src="IMG_1891.JPG" class="d-block w-100" alt="Mosaic">
+              </div>
+              <div class="carousel-item">
+                <img src="IMG_1899.JPG" class="d-block w-100" alt="Altar">
+              </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
+              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
+              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Next</span>
+            </button>
+          </div>
+        
+        <!-- Adding the Java Script link -->
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+    </body>
+</html>

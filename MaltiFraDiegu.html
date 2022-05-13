@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Il-Ħamrun</title>
+        <link rel="stylesheet" href="CSS.css">
+        <meta name="viewport" content="width=device-width">
+        <style> 
+            h1 {text-align: center;}
+            h1 {font-family: Arial, Helvetica, sans-serif; padding-top: 20px;}
+            h2 {text-align: center;}
+            h2 {font-family: Arial, Helvetica, sans-serif; padding-top: 10px;}
+            p {text-align: justify;}
+            p {font-family: Arial, Helvetica, sans-serif; padding: 20px;} 
+        </style>
+
+        <!-- Adding the icon library -->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+        
+    </head>
+    
+    <body style="background-color: rgb(240, 243, 243)">
+        
+        <!-- Add font awesome icon to buttons  -->         
+        <button onclick="window.location.href='https://goo.gl/maps/9viKMD23vrGq2xw48';" class="btn1"><i class="fa fa-compass"></i></button>
+        <button onclick="window.location.href='MaltiMonumenti.html';" class="btn2"><i class="fa fa-arrow-left"></i></button>
+    
+        <!-- Adding the Hamrun Local Logo -->
+        <a href="MaltiHome.html"> 
+          <img src="Arma Hamrun.png" alt="Arma" class="logocentre"/> 
+        </a>
+
+        <!-- Adding the header -->
+        <h1>Il-Ħamrun</h1>
+
+        <!-- Adding the sub-header -->
+        <h2>Monument ta' Fra Diegu</h2> 
+
+        <!-- Adding the body -->
+        <p>
+            Fil-16 ta’ Ottubru, 1932, ġie inawgurat monument f’Misraħ San Pawl lil Fra Diegu – bniedem kbir f’qalbu, ħanin, karitattiv u li meta 
+            miet, Malta kollha bkietu. <!-- Creating the Read More --> <span id="dots">...</span><span id="more"> 
+            
+            <br><br>
+
+            Bit-tħabrik tiegħu kien sar l-istitut li għadu sa llum iġib ismu. Għall-ħabta ta’ l-4 ta’ wara nofs inhar bdew jinġabru l-Ministri, 
+            Senaturi, Deputati tal-Parlament, rappreżentanti tal-Kleru u t-tfal ta’ l-istess istitut. Wara ftit wasal l-Arċisqof u deher ukoll 
+            il-Gvernatur li kixef l-istatwa. 
+            
+            <br><br>
+
+            Fost folla kbira ta’ nies, il-President tal-Qorti, Sir Arturo Mercieca, niseġ kelmtejn għal-okkażjoni u 
+            l-banda San Ġużepp daqqet innu miktub apposta mis-Surmast C.Camilleri. Il-monument sar mill-iskultur Vincent Apap, u biex tqiegħed 
+            f’postu kellhom itellgħu pilastri minn taħt il-pjazza billi taħtu hemm għar kbir.
+            public.</span>
+        </p>
+
+        <!-- Creating the button -->
+        <button style="display:block; margin: 0 auto" onclick="myFunction()" id="myBtn">Aqra aktar</button>
+        <br>
+        <br>
+
+        <!-- Code for button to work -->
+        <script>
+            function myFunction() {
+                var dots = document.getElementById("dots");
+                var moreText = document.getElementById("more");
+                var btnText = document.getElementById("myBtn");
+            
+                if (dots.style.display === "none") {
+                    dots.style.display = "inline";
+                    btnText.innerHTML = "Aqra aktar"; 
+                    moreText.style.display = "none";
+                } 
+                else {
+                    dots.style.display = "none";
+                    btnText.innerHTML = "Aqta anqas"; 
+                    moreText.style.display = "inline";
+                } 
+            }
+          </script>
+
+        <!-- Adding the Carousel with the images -->
+        <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="carousel">
+            <div class="carousel-indicators">
+              <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+              <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
+              <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
+              <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="3" aria-label="Slide 4"></button>
+            </div>
+            <div class="carousel-inner">
+              <div class="carousel-item active">
+                <img src="img_1589.jpg" class="d-block w-100" alt="Diego">
+              </div>
+              <div class="carousel-item">
+                <img src="IMG_1592.JPG" class="d-block w-100" alt="Diego">
+              </div>
+              <div class="carousel-item">
+                <img src="IMG_1606.JPG" class="d-block w-100" alt="Diego">
+              </div>
+              <div class="carousel-item">
+                <img src="IMG_1609.JPG" class="d-block w-100" alt="Square">
+              </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
+              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
+              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Next</span>
+            </button>
+          </div>
+        
+        <!-- Adding the Java Script link -->
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+    </body>
+</html>

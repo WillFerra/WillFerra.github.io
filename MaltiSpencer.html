@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Il-Ħamrun</title>
+        <link rel="stylesheet" href="CSS.css">
+        <meta name="viewport" content="width=device-width">
+        <style> 
+            h1 {text-align: center;}
+            h1 {font-family: Arial, Helvetica, sans-serif; padding-top: 20px;}
+            h2 {text-align: center;}
+            h2 {font-family: Arial, Helvetica, sans-serif; padding-top: 10px;}
+            p {text-align: justify;}
+            p {font-family: Arial, Helvetica, sans-serif; padding: 20px;} 
+        </style>
+
+        <!-- Adding the icon library -->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+        
+    </head>
+    
+    <body style="background-color: rgb(240, 243, 243)">
+        
+        <!-- Add font awesome icon to buttons  -->         
+        <button onclick="window.location.href='https://goo.gl/maps/5SigFtKbQu7NnTLo6';" class="btn1"><i class="fa fa-compass"></i></button>
+        <button onclick="window.location.href='MaltiMonumenti.html';" class="btn2"><i class="fa fa-arrow-left"></i></button>
+    
+        <!-- Adding the Hamrun Local Logo -->
+        <a href="MaltiHome.html"> 
+          <img src="Arma Hamrun.png" alt="Arma" class="logocentre"/> 
+        </a>
+
+        <!-- Adding the header -->
+        <h1>Il-Ħamrun</h1>
+
+        <!-- Adding the sub-header -->
+        <h2>Musulew ta' Spencer</h2> 
+
+        <!-- Adding the body -->
+        <p>
+            Dan il-mafkar twaqqaf fl-1830 mill-fregata Ingliża ‘Madagascar’ f’ġieh il-kaptan tagħha Sir Robert Cavendish 
+            Spencer li kien miet Lixandra.  <!-- Creating the Read More --> <span id="dots">...</span><span id="more"> 
+            
+            <br><br>
+            
+            Il-kitba li hemm fuqu tgħid li Spencer miet fuq il-vapur f’Lixandra fl-4 ta’ Novembru, 1830 u ġie midfun il-Belt fit-12 ta’ Diċembru. Sħabu waqqfu 
+            dan il-monument b’forma ta’ mawsulew għoli ħafna f’Marzu ta’ l-1893 li tneħħa mill-Għolja ta’ Kordin fejn kien qabel u tqiegħed fejn hu llum f’April 
+            ta’ l-istess sena.
+            
+            <br> <br>
+            
+            Dan il-monument tħażżeż mill-pittur u arkitett Giorgio Pullicino. Fil-proġett tal-‘fly-over’ tal-Blata l-Bajda, dan il-musulew sab ruħu fin-nofs bla ma 
+            nħatt, kontra dak li ħasbu xi wħud. F’Ottubru ta’ l-1975 sajjetta laqtet il-parti tiegħu ta’ fuq u ġarrfitha.
+            
+            <br> <br>
+            
+            Dan il-monument fl-1998 ġie restawrat minn Mizzi Organisation billi fil-gwerra kellu xi daqqiet fih ta’ splinters tal-bombi li waqgħu ħdejh. 
+            Ix-xogħol tiegħu nbeda nhar l-Erbgħa, 17 ta’ Diċembru, 1997, b’kollaborazzjoni mal-Kunsill Lokali tal-Ħamrun.
+            
+            <br> <br>
+            
+            Preżenti kien hemm il-Ministru ta’ l-Edukazzjoni, is-Sur Evarist Bartolo, Dr Peter Attard, is-Sindku tal-Ħamrun u d-Direttur ta’ Mizzi Organisation.</span>
+        </p>
+
+        <!-- Creating the button -->
+        <button style="display:block; margin: 0 auto" onclick="myFunction()" id="myBtn">Aqra aktar</button>
+        <br>
+        <br>
+
+        <!-- Code for button to work -->
+        <script>
+            function myFunction() {
+                var dots = document.getElementById("dots");
+                var moreText = document.getElementById("more");
+                var btnText = document.getElementById("myBtn");
+            
+                if (dots.style.display === "none") {
+                    dots.style.display = "inline";
+                    btnText.innerHTML = "Aqra aktar"; 
+                    moreText.style.display = "none";
+                } 
+                else {
+                    dots.style.display = "none";
+                    btnText.innerHTML = "Aqra anqas"; 
+                    moreText.style.display = "inline";
+                } 
+            }
+          </script>
+
+        <!-- Adding the Carousel with the images -->
+        <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="carousel">
+            <div class="carousel-indicators">
+              <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+              <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
+              <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
+              <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="3" aria-label="Slide 4"></button>
+              <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="4" aria-label="Slide 5"></button>
+            </div>
+            <div class="carousel-inner">
+              <div class="carousel-item active">
+                <img src="IMG_1687.JPG" class="d-block w-100" alt="Front">
+              </div>
+              <div class="carousel-item">
+                <img src="IMG_1705.JPG" class="d-block w-100" alt="Back">
+              </div>
+              <div class="carousel-item">
+                <img src="IMG_1680.JPG" class="d-block w-100" alt="Plaque">
+              </div>
+              <div class="carousel-item">
+                <img src="IMG_1692.JPG" class="d-block w-100" alt="Plaque">
+              </div>
+              <div class="carousel-item">
+                <img src="IMG_1694.JPG" class="d-block w-100" alt="Plaque">
+              </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
+              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
+              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Next</span>
+            </button>
+          </div>
+
+        <!-- Adding the Java Script link -->
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+    </body>
+</html>

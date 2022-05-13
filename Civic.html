@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Il-Hamrun</title>
+        <link rel="stylesheet" href="CSS.css">
+        <meta name="viewport" content="width=device-width">
+        <style> 
+            h1 {text-align: center;}
+            h1 {font-family: Arial, Helvetica, sans-serif; padding-top: 20px;}
+            h2 {text-align: center;}
+            h2 {font-family: Arial, Helvetica, sans-serif; padding-top: 10px;}
+            p {text-align: justify;}
+            p {font-family: Arial, Helvetica, sans-serif; padding: 20px;} 
+        </style>
+
+        <!-- Adding the icon library -->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+        
+    </head>
+    
+    <body style="background-color: rgb(240, 243, 243)">
+        
+        <!-- Add font awesome icon to buttons  -->         
+        <button onclick="window.location.href='https://goo.gl/maps/UamJWBtqePUC93LAA';" class="btn1"><i class="fa fa-compass"></i></button>
+        <button onclick="window.location.href='Clubs.html';" class="btn2"><i class="fa fa-arrow-left"></i></button>
+    
+        <!-- Adding the Hamrun Local Logo -->
+        <a href="index.html"> 
+          <img src="Arma Hamrun.png" alt="Arma" class="logocentre"/> 
+        </a>
+
+        <!-- Adding the header -->
+        <h1>Il-Ħamrun</h1>
+
+        <!-- Adding the sub-header -->
+        <h2>Civic Club</h2> 
+
+        <!-- Adding the body -->
+        <p>
+            The Civic Club was founded in January 1954 and is found in the most central part of Hamrun, next to the 
+            Parish church of St. Cajetan. <!-- Creating the Read More --> <span id="dots">...</span><span id="more"> 
+            
+            <br><br>
+            
+            Since the beginning of the club, the main aim of the club was to be social, recreation and educational.
+            
+            <br> <br>
+            
+            This club serves as a place for Hamrun locals to have a place to meet for recreational purposes in a club that is neither political 
+            nor music related. It is open for everyone without any discrimination of race, nationality, or religious beliefs. For many years, the 
+            club served as a place for Civic Council to meet, one of the first on the island. This council was similar to current local council 
+            with the difference being that the council members weren’t elected by Hamrun locals but was made up of representatives of different 
+            established clubs in Hamrun.
+            
+            <br> <br>
+            
+            The club was used many times as a neutral place to hold meetings between different cubs and individuals who had some kind of disputes 
+            to settle between them. The club was also used as a venue for religious, recreational, informative, cultural, and medical meetings. For 
+            some time, the club was used as a place for guitar and lute enthusiasts to meet as a means of relaxation whilst practicing their passion. 
+            The club has many success stories in the sports field. It had one of the best enthusiast football teams which went by the name, 
+            Hamrun Eagles. The club has many honours that it won along the years in billiard and darts.
+
+            <br> <br>
+        
+            Today, the club serves as the official seat of other clubs like R.A.F.A – Royal Air Force Association, which is a club for ex-service 
+            men of the Royal Air Force. The Dun Neric Foundation also uses the club as a meeting place the foundation was founded in honour of the 
+            ex-Parish Priest Fr. Neric Cordina who was loved by many and will remain remembered for the many works, he did in the Hamrun Parish, 
+            and for starting the works on the Dome of the Church.</span>
+        </p>
+
+        <!-- Creating the button -->
+        <button style="display:block; margin: 0 auto" onclick="myFunction()" id="myBtn">Read more</button>
+        <br>
+        <br>
+
+        <!-- Code for button to work -->
+        <script>
+            function myFunction() {
+                var dots = document.getElementById("dots");
+                var moreText = document.getElementById("more");
+                var btnText = document.getElementById("myBtn");
+            
+                if (dots.style.display === "none") {
+                    dots.style.display = "inline";
+                    btnText.innerHTML = "Read more"; 
+                    moreText.style.display = "none";
+                } 
+                else {
+                    dots.style.display = "none";
+                    btnText.innerHTML = "Read less"; 
+                    moreText.style.display = "inline";
+                } 
+            }
+          </script>
+
+        <!-- Adding the image -->
+        <img src="IMG_1946.JPG" class="d-block w-100" alt="Facade">
+        
+        <!-- Adding the Java Script link -->
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+    </body>
+</html>
